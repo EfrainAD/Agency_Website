@@ -66,6 +66,8 @@ section {
 }
 
 /* HEADER SECTION */
+/* HEADER SECTION */
+/* HEADER SECTION */
 header {
     background-color: var(--grey);
 }
@@ -182,8 +184,82 @@ nav {
     border-width: 0 0 0 4px;
 }
 
+/* Intro Section */
+/* Intro Section */
+/* Intro Section */
+.intro-section {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    margin: 0 auto;
+    text-align: left;
+    overflow: hidden;
+    clip-path: polygon(0 0, 100% 0, 100% 70vh, 0% 100%);
+}
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0 ;
+    background-color: rgba(0, 0, 0, .7);
+}
+.intro-content {
+    padding: 10rem 2.5rem;
+    z-index: 1;
+}
+.intro.text {
+    width: 65%;
+}
+.intro-text h1 {
+    display: block;
+    font-size: 5rem;
+    font-weight: 700;
+    color: var(--white);
+}
+.first-span {
+    font-size: 3rem;
+    display: block;
+    text-transform: capitalize;
+    color: var(--grey);
+    opacity: .7;
+}
 
+.second-span::before {
+    content: 'TEXT ANIMATION';
+    animation: text-changer 8s infinite 2s;
+}
 
+@keyframes text-changer {
+    0% {
+        content: "WEBSITES";
+        color: var(--color-primary);
+    }
+    25% {
+        content: "MOBILE APPS";
+        color: rgba(255,255,255,.7);
+    }
+    50% {
+        content: "SOFTWARES";
+        color: var(--color-secondary);
+    }
+    75% {
+        content: "WEB APPS";
+        color: rgba(255,255,255,.7);
+    }
+    100% {
+        content: "ICT SERVICES";
+        color: var(--color-primary);
+    }
+}
 
 
 /********* MEDIA QUERIES *********/
