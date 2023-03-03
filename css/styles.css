@@ -272,6 +272,14 @@ nav {
     nav .btn {
         display: none;
     }
+
+    /* INTO SECTION */
+    .intro-content {
+        padding: 4rem 2.5rem;
+    }
+    .intro-text h1 {
+        font-size: 4rem;
+    }
 }
 
 /* Mobile Query */
@@ -327,5 +335,24 @@ nav {
         border: 1px solid var(--dark);
         padding: 2px 5px;
         border-radius: 3px;
+    }
+
+    /* INTRO SECTION */
+    .intro-content {
+        padding: 700rem 2.5rem;
+    }
+    .intro-content h1 {
+        font-size: 3.5rem;
+    }
+    .intro-text {
+        width: 100%;
+        text-align: center;
+    }
+    .first-span {
+        font-size: 2rem;
+    }
+    .intro-text p {
+        text-align: justify;
+        text-justify: inter-word;
     }
 }
